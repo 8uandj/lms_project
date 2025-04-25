@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cổng Thông Tin Đào Tạo</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1>CỔNG THÔNG TIN ĐÀO TẠO</h1>
+        <h2>DÀNH CHO SINH VIÊN</h2>
+      </div>
+      <div class="header-right">
+        <p>Xin chào bạn: Hoàng Duy Hưng [22028293]</p>
+        <div class="header-buttons">
+          <select class="semester-select">
+            <option>MA_HK_242 - Học kỳ 2 năm 2024-2025</option>
+            <option>MA_HK_241 - Học kỳ 1 năm 2024-2025</option>
+            <option>MA_HK_232 - Học kỳ 2 năm 20233-2024</option>
+            <option>MA_HK_231 - Học kỳ 1 năm 2023-2024</option>
+            <option>MA_HK_222 - Học kỳ 2 năm 2022-2023</option>
+            <option>MA_HK_221 - Học kỳ 1 năm 2022-2023</option>
+          </select>
+          <button class="header-btn">Xem thông báo</button>
+          <button class="header-btn">Đổi mật khẩu</button>
+          <button class="header-btn">Thoát</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li data-page="covid-vaccination"><a href="#">Khai báo tiêm phòng COVID</a></li>
+          <li data-page="guide"><a href="#">Hướng dẫn</a></li>
+          <li data-page="support-profile"><a href="#">Cập nhật hồ sơ sinh viên</a></li>
+          <li data-page="view-schedule"><a href="#">Kết quả đăng ký học</a></li>
+          <li data-page="course-registration"><a href="#">Đăng ký môn học</a></li>
+          <li data-page="study-results" class="active"><a href="#">Kết quả học tập</a></li>
+          <li data-page="exam-schedule"><a href="#">Lịch thi</a></li>
+          <li data-page="course-syllabus"><a href="#">Đề cương môn học</a></li>
+          <li data-page="forms-list"><a href="#">Danh sách biểu mẫu</a></li>
+          <li data-page="support-request"><a href="#">Gửi yêu cầu trợ giúp</a></li>
+          <li data-page="email-account"><a href="#">Tài khoản truy cập Email</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="main-content">
+        <!-- Nội dung mặc định (Kết quả học tập) -->
+        <div class="content-block">
+          <h3>KẾT QUẢ HỌC TẬP</h3>
+          <div class="tabs">
+            <button class="tab-btn">Xem điểm ngành 1</button>
+            <button class="tab-btn">Xem điểm ngành 2</button>
+            <button class="tab-btn">Xem điểm trường gửi</button>
+            <label style="margin-left: 20px;">
+              <input type="checkbox"> Xem cập nhật môn ngoài CTDT
+            </label>
+            <button class="print-btn" style="margin-left: auto;">In ấn</button>
+          </div>
+          <div class="results-section">
+            <p><strong>Sinh viên:</strong> Hoàng Duy Hưng</p>
+            <p><strong>Mã số:</strong> 22028293</p>
+            <p><strong>Lớp quản lý:</strong> QH-2022-I/CQ-CS1</p>
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th colspan="8">HỌC KỲ 1 - 2024-2025, MÃ HỌC KỲ 241</th>
+                </tr>
+                <tr>
+                  <th>STT</th>
+                  <th>MÃ MH</th>
+                  <th>MÔN HỌC</th>
+                  <th>SỐ TC</th>
+                  <th>Điểm hệ 10</th>
+                  <th>Điểm chữ</th>
+                  <th>Điểm hệ 4</th>
+                  <th>Chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>PES1020</td>
+                  <td>Bóng rổ 1</td>
+                  <td>1</td>
+                  <td>Đạt</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>INT2041</td>
+                  <td>Tương tác người máy</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>D</td>
+                  <td>1</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>INT3121</td>
+                  <td>Các chuyên đề trong Khoa học máy tính</td>
+                  <td>3</td>
+                  <td>8.4</td>
+                  <td>B+</td>
+                  <td>3.5</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>INT3230</td>
+                  <td>Mật mã và an toàn thông tin</td>
+                  <td>4</td>
+                  <td>9</td>
+                  <td>A+</td>
+                  <td>4</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>INT3103</td>
+                  <td>Tối ưu hóa</td>
+                  <td>3</td>
+                  <td>9</td>
+                  <td>A+</td>
+                  <td>4</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th colspan="8">HỌC KỲ 2 - 2023-2024, MÃ HỌC KỲ 232</th>
+                </tr>
+                <tr>
+                  <th>STT</th>
+                  <th>MÃ MH</th>
+                  <th>MÔN HỌC</th>
+                  <th>SỐ TC</th>
+                  <th>Điểm hệ 10</th>
+                  <th>Điểm chữ</th>
+                  <th>Điểm hệ 4</th>
+                  <th>Chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>PHI1002</td>
+                  <td>Chủ nghĩa xã hội khoa học</td>
+                  <td>2</td>
+                  <td>8.2</td>
+                  <td>B+</td>
+                  <td>3.5</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>ELT2035</td>
+                  <td>TÍn hiệu và hệ thống</td>
+                  <td>3</td>
+                  <td>8.1</td>
+                  <td>B+</td>
+                  <td>3.5</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>FLF1108</td>
+                  <td>Tiếng Anh B2</td>
+                  <td>5</td>
+                  <td>7</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>INT2208</td>
+                  <td>Công nghệ phần mềm</td>
+                  <td>3</td>
+                  <td>7.7</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>THL1057</td>
+                  <td>Nhà nước và pháp luật đại cương</td>
+                  <td>2</td>
+                  <td>7.6</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>INT2213</td>
+                  <td>Mạng máy tính</td>
+                  <td>4</td>
+                  <td>7</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>INT1008</td>
+                  <td>Kinh tế chính trị trị Mác – Lênin</td>
+                  <td>2</td>
+                  <td>7.5</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>UET1002</td>
+                  <td>Kỹ năng khởi nghiệp</td>
+                  <td>2</td>
+                  <td>8.5</td>
+                  <td>A</td>
+                  <td>3.7</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>INT2044E</td>
+                  <td>Lý thuyết thông tin</td>
+                  <td>3</td>
+                  <td>7.5</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </table>
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th colspan="8">HỌC KỲ 1 - 2022-2023, MÃ HỌC KỲ 221</th>
+              </tr>
+              <tr>
+                <th>STT</th>
+                <th>MÃ MH</th>
+                <th>MÔN HỌC</th>
+                <th>SỐ TC</th>
+                <th>Điểm hệ 10</th>
+                <th>Điểm chữ</th>
+                <th>Điểm hệ 4</th>
+                <th>Chi tiết</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>INT2204</td>
+                <td>Lập trình hướng đối tượng</td>
+                <td>3</td>
+                <td>8.5</td>
+                <td>A</td>
+                <td>3.7</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2210</td>
+                <td>Cấu trúc dữ liệu và giải thuật</td>
+                <td>4</td>
+                <td>8.6</td>
+                <td>A</td>
+                <td>3.7</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>INT2211</td>
+                <td>Cơ sở dữ liệu</td>
+                <td>4</td>
+                <td>6.8</td>
+                <td>C+</td>
+                <td>2.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>INT2212</td>
+                <td>Kiến trúc máy tính</td>
+                <td>4</td>
+                <td>7.5</td>
+                <td>B</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th colspan="8">HỌC KỲ 2 - 2022-2023, MÃ HỌC KỲ 222</th>
+              </tr>
+              <tr>
+                <th>STT</th>
+                <th>MÃ MH</th>
+                <th>MÔN HỌC</th>
+                <th>SỐ TC</th>
+                <th>Điểm hệ 10</th>
+                <th>Điểm chữ</th>
+                <th>Điểm hệ 4</th>
+                <th>Chi tiết</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>HIS1001</td>
+                <td>Lịch sử Đảng Cộng sản Việt Nam</td>
+                <td>2</td>
+                <td>7.8</td>
+                <td>B</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>POL1001</td>
+                <td>Tư tưởng Hồ Chí Minh</td>
+                <td>2</td>
+                <td>8.6</td>
+                <td>A</td>
+                <td>3.7</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>INT1050</td>
+                <td>Toán rời rạc</td>
+                <td>4</td>
+                <td>8.5</td>
+                <td>A+</td>
+                <td>4</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>MAT1042</td>
+                <td>Giải tích 2</td>
+                <td>4</td>
+                <td>6.8</td>
+                <td>C+</td>
+                <td>2.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>INT2215</td>
+                <td>Lập trình nâng cao</td>
+                <td>4</td>
+                <td>7.5</td>
+                <td>B</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>EPN1096</td>
+                <td>Vật lý đại cương 2</td>
+                <td>2</td>
+                <td>8</td>
+                <td>B+</td>
+                <td>3.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>PHI1006</td>
+                <td>Triết học Mác – Lênin</td>
+                <td>3</td>
+                <td>7.5</td>
+                <td>B</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th colspan="8">HỌC KỲ 1 - 2022-2023, MÃ HỌC KỲ 221</th>
+                </tr>
+                <tr>
+                  <th>STT</th>
+                  <th>MÃ MH</th>
+                  <th>MÔN HỌC</th>
+                  <th>SỐ TC</th>
+                  <th>Điểm hệ 10</th>
+                  <th>Điểm chữ</th>
+                  <th>Điểm hệ 4</th>
+                  <th>Chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>FLT107</td>
+                  <td>Tiếng Anh B1</td>
+                  <td>5</td>
+                  <td>0.2</td>
+                  <td>F</td>
+                  <td>0</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>MAT1093</td>
+                  <td>Đại số</td>
+                  <td>4</td>
+                  <td>7.4</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>EPN1095</td>
+                  <td>Vật lý đại cương 1</td>
+                  <td>2</td>
+                  <td>6.8</td>
+                  <td>C+</td>
+                  <td>2.5</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>MAT1094</td>
+                  <td>Giải tích 1</td>
+                  <td>4</td>
+                  <td>7.8</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>INT1008</td>
+                  <td>Nhập môn lập trình</td>
+                  <td>3</td>
+                  <td>7.9</td>
+                  <td>B</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>INT1007</td>
+                  <td>Giới thiệu về Công nghệ thông tin</td>
+                  <td>3</td>
+                  <td>6.9</td>
+                  <td>C</td>
+                  <td>2</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><strong>Tổng tín chỉ:</strong> 97</p>
+            <p><strong>Điểm trung bình tích lũy:</strong> 92</p>
+            <p><strong>Điểm trung bình tích lũy hệ 4:</strong> 3.11</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Số người đang online: <span class="online-count">137</span></p>
+      <p>Cổng thông tin đào tạo ĐHQGHN Hà Nội - Phát triển bởi Trung tâm Ứng dụng CNTT @2011-2025</p>
+      <p>144 đường Xuân Thủy, Quận Cầu Giấy, Hà Nội, Việt Nam</p>
+      <p>Webmaster: <a href="mailto:support@vnu.edu.vn">support@vnu.edu.vn</a></p>
+    </footer>
+  </div>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

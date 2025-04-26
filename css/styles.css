@@ -707,4 +707,61 @@ body {
   .footer a:hover {
     text-decoration: underline;
   }
+
+  .logout-btn {
+    background-color: #d32f2f; /* Màu đỏ */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #b71c1c; /* Màu đỏ đậm khi hover */
+  }
+
+  .change-password-btn {
+    background-color: #1976d2; /* Màu xanh dương */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .change-password-btn:hover {
+    background-color: #1565c0; /* Màu xanh đậm khi hover */
+  }
+  
+  #change-password-form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #change-password-form h4 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  #change-password-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #change-password-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #change-password-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
   

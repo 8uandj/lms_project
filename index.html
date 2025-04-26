@@ -9,28 +9,33 @@
 <body>
   <div class="container">
     <!-- Header -->
-    <header class="header">
+    <div class="header">
       <div class="header-left">
         <h1>CỔNG THÔNG TIN ĐÀO TẠO</h1>
         <h2>DÀNH CHO SINH VIÊN</h2>
       </div>
       <div class="header-right">
-        <p>Xin chào bạn: Hoàng Duy Hưng [22028293]</p>
+        <p>Xin chào bạn: <span id="user-name"></span> [<span id="user-id"></span>]</p>
+        <p>MÃ HK: 242 - Học kỳ 2 năm 2024-2025 <i class="fas fa-caret-down"></i></p>
         <div class="header-buttons">
-          <select class="semester-select">
-            <option>MA_HK_242 - Học kỳ 2 năm 2024-2025</option>
-            <option>MA_HK_241 - Học kỳ 1 năm 2024-2025</option>
-            <option>MA_HK_232 - Học kỳ 2 năm 20233-2024</option>
-            <option>MA_HK_231 - Học kỳ 1 năm 2023-2024</option>
-            <option>MA_HK_222 - Học kỳ 2 năm 2022-2023</option>
-            <option>MA_HK_221 - Học kỳ 1 năm 2022-2023</option>
-          </select>
           <button class="header-btn">Xem thông báo</button>
-          <button class="header-btn">Đổi mật khẩu</button>
-          <button class="header-btn">Thoát</button>
+          <button class="header-btn change-password-btn" onclick="showChangePasswordForm()">Đổi mật khẩu</button>
+          <button class="header-btn logout-btn" onclick="logout()">Đăng xuất</button>
+        </div>
+        <div id="change-password-form" style="display: none; margin-top: 10px; background-color: #f9f9f9; padding: 15px; border-radius: 5px;">
+          <h4>Đổi mật khẩu</h4>
+          <div class="form-group">
+            <label>Mật khẩu cũ:</label>
+            <input type="password" id="old-password" placeholder="Nhập mật khẩu cũ">
+          </div>
+          <div class="form-group">
+            <label>Mật khẩu mới:</label>
+            <input type="password" id="new-password" placeholder="Nhập mật khẩu mới">
+          </div>
+          <button class="submit-btn" onclick="changePassword()">Xác nhận</button>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- Main Wrapper -->
     <div class="main-wrapper">
@@ -484,12 +489,12 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <p>Số người đang online: <span class="online-count">137</span></p>
+    <div class="footer">
+      <p>Số người đang online: <span id="online-users">137</span></p>
       <p>Cổng thông tin đào tạo ĐHQGHN Hà Nội - Phát triển bởi Trung tâm Ứng dụng CNTT @2011-2025</p>
       <p>144 đường Xuân Thủy, Quận Cầu Giấy, Hà Nội, Việt Nam</p>
       <p>Webmaster: <a href="mailto:support@vnu.edu.vn">support@vnu.edu.vn</a></p>
-    </footer>
+    </div>
   </div>
 
   <script src="./js/scripts.js"></script>
